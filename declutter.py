@@ -35,7 +35,7 @@ def transfer(tp,copy_directory):
             file_count += 1
             print ("transferring %s" % i)
             shutil.copy(d+"\\"+i, copy_directory)
-            remove(d+"\\"+i, copy_directory)
+            remove(d+"\\"+i)
             
     if file_count!=0:
         toaster.show_toast( 'Transferred %s files' % file_count)
